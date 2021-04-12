@@ -1,0 +1,119 @@
+* { 
+	margin: 0px; /*creem un marge i un espai*/
+	padding: 0px;
+}
+
+body {
+	font-family: arial, helvetica;
+	background: #B5B5B5; /*color del fons total de la pàgina*/
+	color: #122C3D;
+}
+
+#contenidor {
+	width: 1500px; /*totes les mides i marges de tot el div*/
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px; /*redondeix les bores de tot el contingut*/
+	overflow: hidden;
+}
+
+header {
+	height: 150px; /*alçada i color del fons de la capçelera*/
+	background: #D04F17;
+}
+
+header h1 {
+	font-size: 50px; /*indica la mida i centra el h1*/
+	text-align: center;
+	line-height: 150px;
+}
+
+nav { /*menu*/
+	background: #122C3D;
+	height: 60px;
+}
+
+#menu {
+	list-style: none;
+	padding: 0;
+	background: #092327
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+#menu li a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+
+#menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+#menu li a:hover{
+	background: #EF8354;
+}
+
+#contingut { /*contingut de la pàgina (restaurants)*/
+	width: 1000px;
+	height: 500px;
+	float: left; /* ubico l'element a la part esquerra de la pàgina*/
+	background: #FFF;
+}
+
+#contingut h2 { /*contingut de la pàgina, per poder moure el text cap a l'esquerra*/
+	font-size: 30px;
+	text-align: left;
+	line-height: 100px;
+}
+
+figure {
+	margin: 0;
+	display: inline-block;
+	border: 1px solid black;
+	position: relative;
+}
+
+figcaption {
+	display: none;
+	background: #AAA;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 90%;
+	padding: 5%;
+}
+
+figure:hover figcaption {
+	display: block;
+}
+
+aside { /*recuadre de la publicitat*/
+	width: 500px;
+	height: 500px;
+	background: #D3D3D3;
+	float: left;
+}
+
+aside h2 { /*mida de les lletres i la seva ubicació*/
+	font-size: 35px;
+	text-align: left;
+	line-height: 50px;
+}
+
+footer { /*peu de pàgina*/
+	background: #122C3D;
+}
+
+footer h2 { /*mida i color del text de dintre el peu de pagina*/
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	font-size: italic;
+	color: #FFF;
+}
